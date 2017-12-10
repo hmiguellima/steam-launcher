@@ -1,0 +1,22 @@
+﻿.back-button {
+    vertical-align: middle;
+}
+.title {
+    display: inline;
+    vertical-align: middle;
+    margin-left: 1em;
+}
+
+.game-header-img {
+    padding-top: 1em;
+    width: 300px;
+}
+
+.game-page {
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    padding: 1em;
+}

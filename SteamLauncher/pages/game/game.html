@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/pages/game/game.css" />
+    <script src="/pages/game/game.js"></script>
+</head>
+<body>
+    <header>
+        <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+        <h2 class="title" data-win-bind="textContent: name"></h2>
+    </header>
+    <div class="game-page">
+        <aside>
+            <img class="game-header-img" data-win-bind="src: header_image" />
+            <button id="playButton" data-win-control="WinJS.UI.Command" data-win-options="{icon: 'play', label: 'Play'}"/>
+        </aside>
+        <article>
+            <span data-win-bind="innerHTML: short_description"></span>
+        </article>
+    </div>
+</body>
+</html>

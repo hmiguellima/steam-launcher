@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/pages/home/home.css" />
+    <script src="/pages/home/home.js"></script>
+</head>
+<body>
+    <div class="smallListIconTextTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+        <div class="smallListIconTextItem">
+            <img src="#" class="smallListIconTextItem-Image" data-win-bind="src: picture" />
+            <div class="smallListIconTextItem-Detail">
+                <h4 class="win-h4" data-win-bind="textContent: title"></h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="listView"
+         class="win-selectionstylefilled"
+         data-win-control="WinJS.UI.ListView"
+         data-win-options="{
+            itemDataSource: SteamLauncher.gameList.data.dataSource,
+            itemTemplate: select('.smallListIconTextTemplate'),
+            selectionMode: 'none',
+            tapBehavior: 'invokeOnly',
+            layout: { type: WinJS.UI.GridLayout }
+    }">
+    </div>
+</body>
+</html>
